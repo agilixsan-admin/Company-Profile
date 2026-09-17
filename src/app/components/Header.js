@@ -24,20 +24,12 @@ export default function Header() {
   return (
     <header className="header">
       <Link href="/" className="header__brand" onClick={closeMenu}>
-        <svg
-          className="header__brand-icon"
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M12 2L2 22l10-4 10 4L12 2z" />
-        </svg>
-        Agilix
+        <img
+          src="/agilix-logo.png"
+          alt="Agilix Tech Logo"
+          className="header__brand-logo"
+        />
+        <span>Agilix</span>
       </Link>
 
       <nav className={`nav ${isExpanded ? "is-open" : ""}`} id="nav-container">

@@ -10,6 +10,10 @@ const inter = Inter({
 export const metadata = {
   title: "Home - Agilix IT Solutions",
   description: "Premium web solutions and enterprise IT architecture for the modern digital landscape.",
+  icons: {
+    icon: "/agilix-logo.png",
+    apple: "/agilix-logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {

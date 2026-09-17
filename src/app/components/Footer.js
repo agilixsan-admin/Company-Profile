@@ -12,10 +12,12 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__left">
         <div className="footer__brand">
-          <svg className="footer__brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 2L2 22l10-4 10 4L12 2z" />
-          </svg>
-          Agilix
+          <img
+            src="/agilix-logo.png"
+            alt="Agilix Tech Logo"
+            className="footer__brand-logo"
+          />
+          <span>Agilix Tech</span>
         </div>
         <p className="footer__desc">{t.footer.desc}</p>
         <p className="footer__copyright">{t.footer.copyright}</p>
