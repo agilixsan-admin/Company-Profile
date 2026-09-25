@@ -172,7 +172,7 @@ export default function PortfolioPage() {
                           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" />
                           </svg>
-                          {lang === "id" ? "Lihat Detail" : "View Details"}
+                          View Details
                         </span>
                       </div>
                     </div>
@@ -211,7 +211,7 @@ export default function PortfolioPage() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" /><circle cx="12" cy="12" r="3" />
                       </svg>
-                      {lang === "id" ? "Lihat Detail" : "View Details"}
+                      View Details
                     </Link>
                   </div>
                 </div>

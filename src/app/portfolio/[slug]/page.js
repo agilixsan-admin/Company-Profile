@@ -70,7 +70,7 @@ export default function ProjectDetailPage({ params }) {
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <polyline points="15 18 9 12 15 6" />
             </svg>
-            {lang === "id" ? "Kembali ke Portofolio" : "Back to Portfolio"}
+            Back to Portfolio
           </Link>
 
           {/* Meta Row (Pills) */}
@@ -118,7 +118,7 @@ export default function ProjectDetailPage({ params }) {
               className="pd-v2-browser-body"
               onClick={() => project.coverImage && setActiveImage({ src: project.coverImage, caption: `${project.title} — Login Portal` })}
               style={{ cursor: project.coverImage ? "pointer" : "default" }}
-              title={project.coverImage ? (lang === "id" ? "Klik untuk melihat ukuran penuh" : "Click to view full size") : ""}
+              title={project.coverImage ? "Click to view full size" : ""}
             >
               {project.coverImage ? (
                 <div className="pd-v2-screenshot-viewport">
@@ -135,7 +135,7 @@ export default function ProjectDetailPage({ params }) {
                         <line x1="11" y1="8" x2="11" y2="14" />
                         <line x1="8" y1="11" x2="14" y2="11" />
                       </svg>
-                      {lang === "id" ? "Klik untuk ukuran penuh" : "Click to view full size"}
+                      Click to view full size
                     </span>
                   </div>
                 </div>
@@ -177,14 +177,14 @@ export default function ProjectDetailPage({ params }) {
             {/* Left Column: Project Overview & Tech Stack */}
             <div className="pd-v2-overview">
               <div className="pd-v2-section-label">
-                {lang === "id" ? "Overview Proyek" : "Project Overview"}
+                Project Overview
               </div>
               <p>{project.overview}</p>
 
               {project.features && project.features.length > 0 && (
                 <>
                   <div className="pd-v2-section-label" style={{ marginTop: "32px", fontSize: "17px" }}>
-                    {lang === "id" ? "Fitur Utama" : "Key Features"}
+                    Key Features
                   </div>
                   <ul className="pd-v2-feature-list">
                     {project.features.map((feat, idx) => (
@@ -211,10 +211,10 @@ export default function ProjectDetailPage({ params }) {
             <div className="pd-v2-screens-col">
               <div className="pd-v2-screens-head">
                 <div className="pd-v2-section-label" style={{ marginBottom: 0 }}>
-                  {lang === "id" ? "Tangkapan Layar" : "Screenshots"}
+                  Screenshots
                 </div>
                 <span className="pd-v2-count">
-                  {project.screenshots?.length || 0} {lang === "id" ? "foto" : "images"}
+                  {project.screenshots?.length || 0} images
                 </span>
               </div>
 
@@ -223,7 +223,7 @@ export default function ProjectDetailPage({ params }) {
                   key={idx}
                   className="pd-v2-thumb"
                   onClick={() => setActiveImage(shot)}
-                  title={lang === "id" ? "Klik untuk memperbesar" : "Click to enlarge"}
+                  title="Click to enlarge"
                 >
                   <div className="pd-v2-thumb-top">
                     <span /><span /><span />

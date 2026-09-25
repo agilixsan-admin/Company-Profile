@@ -130,7 +130,7 @@ export default function ContactPage() {
                 style={{ width: '100%', marginTop: '0.5rem' }}
                 disabled={status === "sending"}
               >
-                {status === "sending" ? "TRANSMITTING..." : t.submitBtn}
+                {status === "sending" ? "SENDING..." : t.submitBtn}
               </button>
             </form>
           </div>
@@ -181,7 +181,18 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="contact-map" aria-label="Location Map Visualization" />
+            <div className="contact-map" aria-label="Location Map">
+              <iframe
+                title="Agilix Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.6!2d106.74547!3d-6.45428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjcnMTUuNFMgMTA2wrA0NCc0My43RSI!5e0!3m2!1sen!2sid!4v1700000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: '12px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
 
@@ -207,9 +218,6 @@ export default function ContactPage() {
                   <span className="milestone-card__step">{item.step}</span>
                   {item.payment ? (
                     <span className="milestone-card__payment-badge">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                      </svg>
                       {item.payment}
                     </span>
                   ) : (

@@ -10,25 +10,25 @@
 export const PROJECTS_EN = [
   {
     id: 1,
-    slug: "posAgilix-saas-pos-platform",
+    slug: "invoice-management",
     category: "startup",
     tag: "Startup",
     status: "completed",
     statusLabel: "Completed",
     date: "Jun 2026 — Sep 2026",
-    title: "POSAgilix — SaaS POS Management Platform",
+    title: "Invoice Management",
     desc: "Multi-tenant SaaS platform for managing POS subscriptions, tenant billing, and user access — built as the admin backbone for the POSAgilix point-of-sale ecosystem.",
-    coverImage: "/screenshots/POS-Login.png",
+    coverImage: "/screenshots/posAgilix-saas-pos-platform-cover.png",
     screenshots: [
-      { src: "/screenshots/overview-2.png", caption: "Admin Dashboard — KPI metrics & tenant growth analytics" },
-      { src: "/screenshots/overview-3.png", caption: "Tenant Management — subscription plans & status control" },
-      { src: "/screenshots/overview-1.png", caption: "Invoice & Billing — auto-generated invoices with PDF/print support" },
+      { src: "/screenshots/posAgilix-saas-pos-platform-dashboard.png", caption: "Admin Dashboard — KPI metrics & tenant growth analytics" },
+      { src: "/screenshots/posAgilix-saas-pos-platform-tenant.png", caption: "Tenant Management — subscription plans & status control" },
+      { src: "/screenshots/posAgilix-saas-pos-platform-billing.png", caption: "Invoice & Billing — auto-generated invoices with PDF/print support" },
     ],
     techs: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Recharts", "Resend"],
     sourceUrl: "#",
     liveUrl: "#",
     overview:
-      "POSAgilix is a full-stack SaaS platform designed to power the administrative backbone of the POSAgilix point-of-sale ecosystem. The platform consists of two main parts: the POSAgilix client-facing POS application (used by restaurant and retail tenants) and Agilix Console — a centralized admin portal for managing multi-tenant accounts, subscription billing, user access, and business monitoring. Built for PT Agilix Tech, the system currently serves multiple UMKM businesses across Indonesia.",
+      "Invoice Management is a full-stack SaaS platform designed to power the administrative backbone of the POSAgilix point-of-sale ecosystem. The platform consists of two main parts: the POSAgilix client-facing POS application (used by restaurant and retail tenants) and Agilix Console — a centralized admin portal for managing multi-tenant accounts, subscription billing, user access, and business monitoring. Built for PT Agilix Tech, the system currently serves multiple UMKM businesses across Indonesia.",
     features: [
       "Subscription Lifecycle & Dunning Enforcement Automates tenant status locking (Active/Locked) when subscription plans expire or payments pass due dates to prevent unauthorized service usage.",
       "Multi-Tenant Financial Dashboard Real-time KPI metrics displaying Total Active Tenants, Monthly Recurring Revenue (MRR), Overdue Receivables, and month-over-month growth analytics.",
@@ -38,55 +38,49 @@ export const PROJECTS_EN = [
       "Comprehensive Audit Trail & Compliance Immutable logging of all administrative actions, invoice adjustments, and status changes for financial compliance and accountability.",
     ],
   },
-];
-
-export const PROJECTS_ID = [
   {
-    id: 1,
-    slug: "posAgilix-saas-pos-platform",
+    id: 2,
+    slug: "agilix-pos-multi-outlet-cashier-system",
     category: "startup",
     tag: "Startup",
     status: "completed",
-    statusLabel: "Selesai",
+    statusLabel: "Completed",
     date: "Jun 2026 — Sep 2026",
-    title: "POSAgilix — Platform SaaS Manajemen POS",
-    desc: "Platform SaaS multi-tenant untuk mengelola langganan POS, penagihan tenant, dan akses pengguna — dibangun sebagai tulang punggung admin ekosistem point-of-sale POSAgilix.",
-    coverImage: "/screenshots/Pos_Login.png",
+    title: "Agilix POS — Multi-Outlet Point-of-Sale System",
+    desc: "Full-featured cloud-based POS system for F&B and retail businesses — supporting multi-outlet operations, cashier shift management, real-time sales analytics, inventory tracking, and PSAK-standard financial reporting.",
+    coverImage: "/screenshots/agilix-pos-login-kasir.jpg",
     screenshots: [
-      { src: "/screenshots/agilix-dashboard.jpg", caption: "Admin Dashboard — Metrik KPI & analitik pertumbuhan tenant" },
-      { src: "/screenshots/agilix-tenant.jpg", caption: "Manajemen Tenant — Paket langganan & kontrol status" },
-      { src: "/screenshots/agilix-invoice.jpg", caption: "Invoice & Tagihan — Invoice otomatis dengan dukungan PDF/cetak" },
+      { src: "/screenshots/agilix-pos-laporan-penjualan.jpg", caption: "Laporan Penjualan — real-time sales analytics with payment method breakdown" },
+      { src: "/screenshots/agilix-pos-laporan-inventori.jpg", caption: "Laporan Inventori & Valuasi Stok — multi-outlet stock valuation with critical alerts" },
+      { src: "/screenshots/agilix-pos-laporan-keuangan.jpg", caption: "Laporan Keuangan Standar Akuntansi — PSAK-compliant income statement & balance sheet" },
+      { src: "/screenshots/agilix-pos-buka-shift.jpg", caption: "Manajemen Shift Kasir — cashier shift opening with float entry & quick amount selection" },
     ],
     techs: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "Recharts", "Resend"],
     sourceUrl: "#",
     liveUrl: "#",
     overview:
-      "POSAgilix adalah platform SaaS full-stack yang dirancang untuk mendukung tulang punggung administratif ekosistem point-of-sale POSAgilix. Platform ini terdiri dari dua bagian utama: aplikasi POS client-facing POSAgilix (digunakan oleh tenant restoran dan ritel) dan Agilix Console — portal admin terpusat untuk mengelola akun multi-tenant, penagihan langganan, akses pengguna, dan monitoring bisnis. Dibangun untuk PT Agilix Teknologi Indonesia, sistem ini saat ini melayani berbagai bisnis UMKM di seluruh Indonesia.",
+      "Agilix POS is a cloud-based, multi-outlet point-of-sale system purpose-built for Indonesian F&B and retail businesses. It serves as the tenant-facing counterpart to the POSAgilix SaaS admin platform. Cashiers and store managers use Agilix POS daily to process transactions, open/close shifts, manage menus and inventory, and generate comprehensive business reports — all within a clean, responsive web interface accessible from any device.",
     features: [
-      "Autentikasi Aman — Login email/password dengan manajemen sesi dan akses berbasis peran (Super Admin vs Tenant Admin)",
-      "Dashboard Multi-tenant — KPI card real-time: Total Tenant, Langganan Aktif, Tunggakan dengan tren bulan-ke-bulan",
-      "Analitik Pertumbuhan Tenant — Grafik garis yang menunjukkan pertumbuhan akuisisi tenant selama 6 bulan terakhir",
-      "Manajemen Tenant — CRUD lengkap untuk akun tenant dengan penugasan paket langganan (Bulanan/Tahunan), jumlah outlet, dan kontrol status (Aktif/Terkunci)",
-      "Penegakan Paket Langganan — Penguncian status otomatis saat langganan habis masa berlaku atau pembayaran tertunggak",
-      "Invoice & Tagihan — Invoice otomatis (mis. INV-202608-0001) dengan pelacakan status PAID, ekspor print/PDF, dan penanganan pajak PPN",
-      "Manajemen Pengguna — Administrasi pengguna per-tenant dengan penugasan peran",
-      "Audit Trail — Pencatatan aktivitas lengkap untuk semua tindakan admin demi kepatuhan dan akuntabilitas",
-      "Panel Perhatian Klien — Panel peringatan yang menyoroti tenant dengan akun tunggakan yang memerlukan tindakan segera",
-      "Pencarian Pintasan Keyboard — Pencarian global Ctrl+K di seluruh invoice, tenant, dan pengguna",
+      "Multi-Outlet Terminal Management Supports multiple store branches under a single account, with per-outlet cashier access, shift isolation, and consolidated reporting across all locations.",
+      "Cashier Shift System Full shift lifecycle with opening float entry, mid-shift transaction tracking, and closing reconciliation — preventing unauthorized transactions outside active shifts.",
+      "Real-Time Sales Analytics Dashboard Live KPI cards for Net Sales, Gross Profit, Cash-In, and Transaction Volume, with product performance rankings and payment method breakdowns (QRIS vs Cash).",
+      "Inventory & Stock Valuation Tracks raw materials and packaging with real-time stock levels, asset valuation per item, and automatic low-stock alerts flagging critical items for immediate restocking.",
+      "PSAK-Standard Financial Reporting Auto-generated Income Statement (Laba Rugi), Balance Sheet (Neraca Keuangan), and Cash Flow Statement compliant with Indonesian PSAK accounting standards, with PDF/print export.",
+      "Menu & Table Order Management Full support for dine-in table-based ordering alongside takeaway/delivery, with product variants, bundling, and real-time kitchen status updates.",
     ],
   },
 ];
 
 /**
- * Get all projects for a given language
+ * Get all projects
  */
-export function getProjects(lang = "en") {
-  return lang === "id" ? PROJECTS_ID : PROJECTS_EN;
+export function getProjects() {
+  return PROJECTS_EN;
 }
 
 /**
- * Find a single project by slug for a given language
+ * Find a single project by slug
  */
-export function getProjectBySlug(slug, lang = "en") {
-  return getProjects(lang).find((p) => p.slug === slug) || null;
+export function getProjectBySlug(slug) {
+  return PROJECTS_EN.find((p) => p.slug === slug) || null;
 }
